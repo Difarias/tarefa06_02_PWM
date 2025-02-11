@@ -42,9 +42,7 @@ make
 - Observe o comportamento do LED RGB na placa física, identificando a intensidade do led que muda com a angulação do servo-motor.
 
 ## Vídeo Demonstração
-[Link do Vídeo](#) *(insira o link do vídeo aqui)*
-
-![Imagem de Demonstração](#) *(insira o link da imagem aqui)*
+[![Link do Vídeo](https://img.youtube.com/vi/z2uhRnvfHxM/0.jpg)](https://youtu.be/z2uhRnvfHxM)
 
 ## Desenvolvedor
 
