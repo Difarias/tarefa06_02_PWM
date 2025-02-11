@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Diego Farias",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": -32.05, "left": -102.05, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -2, "left": 96, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 44.4, "left": -217, "attrs": { "color": "blue" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 138.35,
+      "left": -182.4,
+      "attrs": { "value": "330000" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "servo1:GND", "pico:GND.8", "black", [ "h-57.6", "v-48" ] ],
+    [ "servo1:V+", "pico:3V3", "red", [ "h-76.8", "v0.1" ] ],
+    [ "servo1:PWM", "pico:GP22", "blue", [ "h-76.8", "v0.2" ] ],
+    [ "led1:A", "pico:GP12", "red", [ "v0" ] ],
+    [ "r1:2", "pico:GND.4", "black", [ "v0" ] ],
+    [ "led1:C", "r1:1", "black", [ "v57.6", "h0.4" ] ]
+  ],
+  "dependencies": {}
+}
